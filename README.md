@@ -1,16 +1,32 @@
-# React + Vite
+# React Movie App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A frontend web application built with React and Vite that allows users to search for movies and manage a list of favorites. Data is fetched from the TMDB API, and favorite movies are persisted in the browser using `localStorage`.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* **Movie Search:** Query the TMDB API to find movies by title.
+* **Popular Movies:** Displays a list of trending movies on the home page.
+* **Favorites Management:** Add or remove movies from a personalized favorites list.
+* **Persistent Storage:** Favorites are saved to the browser's `localStorage` to prevent data loss on page refresh.
+* **Global State:** Utilizes the React Context API to distribute the favorites state across multiple components.
 
-## React Compiler
+## Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* **Framework:** React 18
+* **Build Tool:** Vite
+* **Styling:** Standard CSS
+* **API:** The Movie Database (TMDB) REST API
+* **Deployment:** Netlify
 
-## Expanding the ESLint configuration
+## Prerequisites
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+To run this project locally, you need the following installed:
+* [Node.js](https://nodejs.org/) (v18 or higher recommended)
+* A free API key from [The Movie Database (TMDB)](https://www.themoviedb.org/documentation/api)
+
+## Installation and Setup
+
+**1. Clone the repository**
+```bash
+git clone [https://github.com/lPrincel/react-movie-app.git](https://github.com/lPrincel/react-movie-app.git)
+cd react-movie-app
